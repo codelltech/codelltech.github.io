@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Software Design and Engineering | Christopher O'Dell</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header>
+    <h1>Software Design and Engineering</h1>
+    <p>Inventory Manager Enhancement</p>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../self-assessment/index.html">Self-Assessment</a>
+      <a href="../narratives/artifact-1.html">Read Narrative</a>
+      <a href="algorithms-data-structures.html">Next Artifact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Artifact Overview</h2>
+      <p>
+        This artifact is a mobile inventory management application originally developed
+        in Android Studio using Java and SQLite. The application allows users to create
+        an account, log in, and manage inventory items through create, read, update,
+        and delete (CRUD) functionality. For this enhancement, the project was expanded
+        and recreated as a native iOS application using Xcode, SwiftUI, and SwiftData,
+        demonstrating cross-platform development and adaptability to different
+        technology stacks.
+      </p>
+    </section>
+
+    <section>
+      <h2>Purpose of the Enhancement</h2>
+      <p>
+        The goal of this enhancement was to improve the overall design, security, and
+        maintainability of the application while transforming it into a more polished,
+        professional artifact. The original version was functional but contained
+        opportunities for improvement in structure, validation, and security. These
+        enhancements focused on applying software engineering best practices and
+        strengthening the application’s architecture.
+      </p>
+    </section>
+
+    <section>
+      <h2>Enhancements Implemented</h2>
+      <ul>
+        <li>Refactored authentication by separating <code>loginUser()</code> and <code>registerUser()</code> methods</li>
+        <li>Implemented password hashing with unique salts to improve security</li>
+        <li>Added input validation for email formatting and numeric inventory values</li>
+        <li>Introduced a shared <code>BaseActivity</code> class to reduce duplicated UI logic</li>
+        <li>Removed unused parameters and redundant methods to simplify the codebase</li>
+        <li>Reorganized logic into smaller, reusable methods for better maintainability</li>
+        <li>Recreated the application in SwiftUI and SwiftData for iOS</li>
+      </ul>
+
+      <p>
+        These enhancements improved the clarity, scalability, and security of the
+        application while demonstrating the ability to evaluate and refactor an
+        existing codebase into a more maintainable solution.
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills Demonstrated</h2>
+      <ul>
+        <li>Software refactoring and modular design</li>
+        <li>Secure authentication and data handling</li>
+        <li>Object-oriented programming principles</li>
+        <li>Cross-platform development (Android and iOS)</li>
+        <li>Code maintainability and readability improvements</li>
+        <li>Application architecture and design patterns</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Artifact Materials</h2>
+      <p>
+        <a href="https://github.com/codelltech/CS360-AndroidStudio-InventoryManager" target="_blank">
+          View Original Android Code
+        </a><br />
+        <a href="https://github.com/codelltech/XCode-InventoryManager" target="_blank">
+          View Enhanced iOS Version
+        </a><br />
+        <a href="#" target="_blank">Download Supporting Files</a>
+      </p>
+    </section>
+
+    <!-- <section>
+      <h2>Screenshots / Visuals</h2>
+      <p>
+        Include screenshots demonstrating the application’s functionality, such as
+        login screens, inventory management views, and differences between the
+        Android and iOS implementations.
+      </p>
+      <div class="card">
+        <p><strong>Placeholder:</strong> Insert screenshots here.</p>
+      </div>
+    </section> -->
+
+    <section>
+      <h2>Connection to Course Outcomes</h2>
+      <p>
+        This artifact demonstrates the ability to design and evaluate computing
+        solutions using software engineering principles. The restructuring of
+        authentication logic, improved modular design, and removal of unnecessary
+        components reflect a strong understanding of maintainable software design.
+        Additionally, the implementation of password hashing and input validation
+        demonstrates the application of secure coding practices.
+      </p>
+
+      <p>
+        The cross-platform implementation further highlights the ability to apply
+        consistent design principles across different development environments,
+        reinforcing competency in modern tools and techniques.
+      </p>
+    </section>
+
+    <section>
+      <h2>Reflection</h2>
+      <p>
+        Enhancing this artifact reinforced the importance of separation of concerns
+        and modular design. Initially, combining login and registration into a
+        single method seemed efficient, but refactoring into separate methods
+        significantly improved clarity, scalability, and ease of testing.
+      </p>
+
+      <p>
+        Rebuilding the application in SwiftUI introduced new challenges, including
+        transitioning from Android’s Activity-based structure to a declarative UI
+        framework and moving from direct SQL queries to object-based persistence
+        with SwiftData. These challenges strengthened my ability to adapt across
+        platforms while maintaining consistent design principles.
+      </p>
+
+      <p>
+        Overall, this enhancement deepened my understanding of secure coding,
+        maintainability, and cross-platform development, while demonstrating my
+        ability to evaluate existing code and implement meaningful improvements.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Christopher O'Dell</p>
+  </footer>
+</body>
+</html>
